@@ -1,26 +1,56 @@
 # Umamusume Automation Farming Fans
 
-A Python-based computer vision automation designed to handle repetitive farming loops in games (such as *Umamusume*). It utilizes **OpenCV** for Template Matching and **PyAutoGUI** for automated navigation, featuring a structured data-driven workflow, long-phase waiting handlers, and continuous cycling.
+A Python-based computer vision automation designed to handle repetitive farming loops in Umamusume: Pretty Derby. It utilizes **OpenCV** for Template Matching and **PyAutoGUI** for automated navigation, featuring a structured data-driven workflow, long-phase waiting handlers, and continuous cycling.
 
 ---
 
 ## Project Structure
 
 ```text
-umamusume-automation/
-│
-├── images/                 <-- Folder containing all button screenshots/templates
-│   ├── next_button.png
-│   ├── start_button.png
-│   ├── skip_button.png
-│   ├── confirm_button.png
-│   ├── close_button.png
+├── images/
 │   ├── autoplay_button.png
+│   ├── close_button.png
 │   ├── complete_btn.png
-│   ├── finish_button.png
+│   ├── confirm_button.png
 │   ├── decide_button.png
-│   └── try_again_button.png
+│   ├── finish_button.png
+│   ├── next_button.png
+│   ├── ok_button.png
+│   ├── plus_button.png
+│   ├── refill_button.png
+│   ├── skip_button.png
+│   ├── start_button.png
+│   ├── try_again_button.png
+│   ├── use_jewels_button.png
+│   └── use_toughness_button.png
 │
-├── detector.py             <-- Core module for OpenCV Template Matching and clicking
-├── automation.py           <-- Main script containing the workflow and looping logic
-└── requirements.txt        <-- Required Python packages list
+├── automation.py          
+├── automation_event.py    
+├── detector.py            
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## Requirements
+
+1. Make sure Python is installed on your system.
+2. Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+
+## How To Use
+
+Run the main automation script from your terminal:
+```
+python automation.py
+```
+Or
+```
+python automation_event.py
+```
+
+## Notes
+1. Only works on Umamusume Japanese Version with English Translated and URA Finale Scenario.
